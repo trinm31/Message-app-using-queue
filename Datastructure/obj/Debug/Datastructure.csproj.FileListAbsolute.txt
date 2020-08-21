@@ -1,0 +1,6 @@
+/Users/minhtri/RiderProjects/Datastructure/Datastructure/bin/Debug/Datastructure.exe
+/Users/minhtri/RiderProjects/Datastructure/Datastructure/bin/Debug/Datastructure.pdb
+/Users/minhtri/RiderProjects/Datastructure/Datastructure/obj/Debug/Datastructure.csprojAssemblyReference.cache
+/Users/minhtri/RiderProjects/Datastructure/Datastructure/obj/Debug/Datastructure.csproj.CoreCompileInputs.cache
+/Users/minhtri/RiderProjects/Datastructure/Datastructure/obj/Debug/Datastructure.exe
+/Users/minhtri/RiderProjects/Datastructure/Datastructure/obj/Debug/Datastructure.pdb

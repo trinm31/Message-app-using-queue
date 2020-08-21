@@ -1,0 +1,6 @@
+/Users/minhtri/RiderProjects/Datastructure/SendMessageSimple/bin/Debug/SendMessageSimple.exe
+/Users/minhtri/RiderProjects/Datastructure/SendMessageSimple/bin/Debug/SendMessageSimple.pdb
+/Users/minhtri/RiderProjects/Datastructure/SendMessageSimple/obj/Debug/SendMessageSimple.csprojAssemblyReference.cache
+/Users/minhtri/RiderProjects/Datastructure/SendMessageSimple/obj/Debug/SendMessageSimple.csproj.CoreCompileInputs.cache
+/Users/minhtri/RiderProjects/Datastructure/SendMessageSimple/obj/Debug/SendMessageSimple.exe
+/Users/minhtri/RiderProjects/Datastructure/SendMessageSimple/obj/Debug/SendMessageSimple.pdb
