@@ -19,6 +19,7 @@ namespace SendMessageSimple
             Node[] nodes;
             int current;
             int emptySpot;
+            
             public int Size;
 
             public Queue(int size) {
@@ -46,27 +47,27 @@ namespace SendMessageSimple
                 }
                 return nodes[ret].data;
             }
-            public int count()
-            {
-                return emptySpot;
-            }
+            
         }
         public class Buffer
         {
+            public int NumberOfQueue ;
             private Queue<string> messageBuffer; 
             public Buffer()  
             {  
-                messageBuffer = new Queue<string>(250);  
+                messageBuffer = new Queue<string>(25);  
             }  
             public void SendMessage(string m)
             {
+                NumberOfQueue = 0;
                 while (m.Length >= 1)
                 {
                     string sub1;
-                    if (m.Length < 10 )
+                    if (m.Length < 10)
                     {
                         messageBuffer.Enqueue(m);
                         m = string.Empty;
+                        NumberOfQueue++;
                         break;
                     }
                     sub1 = m.Substring(0, 10);
@@ -77,7 +78,9 @@ namespace SendMessageSimple
                     {
                         messageBuffer.Enqueue(sub2);
                         m = string.Empty;
+                        NumberOfQueue++;
                     }
+                    NumberOfQueue++;
                 }
             }
             public void ReceiveMessage()
@@ -104,6 +107,7 @@ namespace SendMessageSimple
                 Buffer buf = new Buffer();
                 Console.WriteLine("Input your message: ");
                 string input = Console.ReadLine();
+                Console.WriteLine("Number of character: "+input.Length);
                 if (input.Length == 0)
                 {
                     throw new ArgumentOutOfRangeException(nameof(Queue<string>), "No input message");
@@ -113,6 +117,7 @@ namespace SendMessageSimple
                     throw new ArgumentOutOfRangeException(nameof(Queue<string>), "Message cannot be more than 250");
                 }
                 buf.SendMessage(input);
+                Console.WriteLine("Number of queue use to send message: " + buf.NumberOfQueue );
                 Console.WriteLine("Message received: ");
                 buf.ReceiveMessage();
             }
@@ -120,7 +125,6 @@ namespace SendMessageSimple
             {
                 Console.WriteLine("Error: " + e.Message);
             }
-
             Console.ReadLine();
         }
     }
