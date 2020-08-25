@@ -127,7 +127,7 @@ namespace SendMessageSimple
                 Console.WriteLine("Message received: ");// Tell received the message in coming 
                 buf.ReceiveMessage();// Print out Receive message
                 var time = DateTime.Now.Millisecond;
-                Console.WriteLine($"\n---------Excuted time: 26");
+                Console.WriteLine($"\n---------Excuted time: {time - startime}");
             }
             catch (Exception e)
             {
